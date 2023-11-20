@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('popo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubre todo el área del cuerpo */
+    background-position: center; /* Centra la imagen */
+    body { font-family: 'Open Sans', sans-serif; /* Ejemplo de fuente de Google */
+    }    
+    height: 100vh; /* Hace que el cuerpo ocupe el 100% de la altura de la ventana */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animate-button {
+    padding: 30px 40px; /* Ajusta el espacio interno del botón */
+    font-size: 28px; /* Tamaño del texto */
+    background-color: rgba(36, 37, 36, 0.281); /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.animate-button:hover {
+    background-color: #141414; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.animate-button:focus {
+    outline: none; /* Elimina el contorno predeterminado al hacer clic */
+}
+
+@keyframes slideUp {
+    to {
+        bottom: 50%; /* Posición final en el centro vertical de la pantalla */
+    }
+}

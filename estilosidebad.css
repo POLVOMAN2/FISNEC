@@ -1,0 +1,61 @@
+/* estilo.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    background-color: #86868600;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    position: static; /* Hace que el encabezado ESTE QUIETOOOOOOOOOOOOOOOOOOOOOOOOOOO :) */
+    width: 20%; /* Asegura que el encabezado ocupe toda la anchura */
+    z-index: 2; /* Asegura que el encabezado esté sobre los otros elementos */
+}
+
+.content {
+    margin-top: 70px; /* Ajusta según la altura de tu encabezado */
+    padding: 15px;
+    margin-left: 200px; /* Espacio para la barra lateral */
+}
+
+.sidebar {
+    height: 100%;
+    width: 195px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculta la barra lateral */
+    background-color: rgba(253, 185, 37, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; /* Espacio para el encabezado */
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.6s;
+}
+
+.sidebar a:hover {
+    background-color: rgba(249, 253, 135, 0.952);
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.sidebar-menu a {
+    margin: 50px 0;
+}
+

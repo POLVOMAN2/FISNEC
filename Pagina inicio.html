@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISNEC - Asesoramiento Contable y Financiero</title>
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      /* Estilo para el cuerpo de la página */
+      body {
+        font-family: 'Times New Roman', Times, serif;
+        background-image: url(Fondo\ inicio.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden; /* Evitar desplazamiento horizontal */
+        font-size: 16px; /* Tamaño de letra base */
+      }
+
+      /* Restricción de ancho máximo para evitar el desplazamiento horizontal */
+      body, header, .sidebar, .content, footer {
+          max-width: 100%;
+          box-sizing: border-box;
+      }
+
+      /* Estilo para el encabezado */
+      header {
+        background-color: rgba(252, 201, 91, 0.7);
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
+
+      /* Estilo para la navegación */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav li {
+        margin: 0 10px;
+      }
+
+      nav a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      }
+
+      /* Estilo para la sección "Acerca de Nosotros" */
+      main section:nth-child(odd) {
+        background-color: rgba(240, 240, 240, 0.7);
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
+
+      /* Estilo para la sección "Nuestros Servicios" */
+      main section:nth-child(even) {
+        background-color: rgba(224, 224, 240, 0.7);
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
+
+      /* Estilo para el pie de página */
+      footer {
+        background-color: rgba(51, 51, 51, 0.7);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      /* Ajusta estilos del botón */
+      .header button {
+        background-color: transparent;
+        color: rgb(189, 163, 17);
+        font-size: 24px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .header h1 {
+        margin: 0;
+      }
+
+      /* Estilos para el contenido principal */
+      .content {
+        margin-top: 70px;
+        padding: 20px;
+        width: 100%;
+      }
+        /* Estilo para los botones */
+        .icon-button {
+            font-size: 16px; /* Tamaño de letra base */
+            padding: 5px 10px;
+            margin: 5px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilo para el botón con el icono "+" */
+        .increase-font {
+            font-size: 17px; /* Tamaño de letra aumentado */
+        }
+
+        /* Estilo para el botón con el icono "-" */
+        .decrease-font {
+            font-size: 15px; /* Tamaño de letra reducido */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+      <main>
+ <!-- ... Contenido principal existente ... -->
+  
+        <!-- Aquí agregamos el código JavaScript proporcionado -->
+        <script>
+          function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.left === "0px") {
+              sidebar.style.left = "-200px"; // Ocultar la barra lateral
+            } else {
+              sidebar.style.left = "0px"; // Mostrar la barra lateral
+            }
+          }
+        </script>
+      </main>
+          <h1>Empresa FISNEC</h1>
+          <h1>Bienvenido</h</h1>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Acerca de nosotros.html">Historia de FISNEC</a></li>
+                <li><a href="#">Nuestros Servicios</a></li>
+                <li><a href="">Inscribete</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <!DOCTYPE html>
+      <html>
+        <head>
+            <title>Barra Lateral Interactiva</title>
+            <!-- Corrección en la siguiente línea -->
+            <link rel="stylesheet" type="text/css" href="estilosidebad.css">
+        </head>
+        <body>
+            <div class="header">
+                <!-- Botón para mostrar/ocultar la barra lateral -->
+                <button onclick="toggleSidebar()">☰</button>
+                <h1>Nuestro mercado</h1>
+            </div>
+        
+            <div id="sidebar" class="sidebar">
+                <!-- Contenido de la barra lateral -->
+                <div class="sidebar-menu">
+                    <a href="AliadosFisnecLocal.html">Nuestros aliados a nivel local</a>
+                    <a href="Comoestasmundo">Nuestros aliados a nivel nacional</a>
+                    <a href="Adiosmundo">Nuestros aliados a nivel internacional</a>
+                </div>
+            </div>        
+      <section>
+          <h2>Acerca de FISNEC</h2>
+          <p>Somos una empresa especializada en ofrecer servicios de asesoramiento contable y financiero para pequeñas empresas y negocios. Nuestra misión es ayudarte a alcanzar el éxito financiero.</p>
+      </section>
+      <section>
+          <h2>Nuestros Servicios</h2>
+          <ul>
+              <li>Asesoramiento contable</li>
+              <li>Planificación financiera</li>
+              <li>Optimización de recursos</li>
+          </ul>
+      </section>
+  </main>
+    <footer>
+        <p>&copy; 2023 FISNEC - Tu éxito financiero es nuestra prioridad</p>
+    </footer>
+  </body>
+  </html>
+    <section>
+  </main> 
+  <footer>
+    <li><a href="https://www.facebook.com/wilki.pedia.14">Pagina del CEO de FISNEC S.A de C.V</a></li>
+    </p>
+    <!-- Aquí agregamos el JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  </html>

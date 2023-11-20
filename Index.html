@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Estilos</title>
+    <link rel="stylesheet" href="BOTON.CSS"> <!-- Enlaza tu archivo de estilos CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('popo.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover; /* Cubre todo el área del cuerpo */
+            background-position: center; /* Centra la imagen */
+            font-family: 'Arial', sans-serif; /* Ajusta la fuente según tus preferencias */
+            color: #fff; /* Ajusta el color del texto para que sea legible en el fondo */
+            height: 100vh; /* Hace que el cuerpo ocupe el 100% de la altura de la ventana */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .animate-button {
+            position: absolute;
+            bottom: -50px; /* Inicialmente fuera de la pantalla */
+            left: 50%; /* Posición inicial centrada rizontalmente */
+            transform: translateX(-50%);
+            animation: slideUp 3s ease forwards; /* Animación de 2 segundos */
+        }
+
+        @keyframes slideUp {
+            to {
+                bottom: 50%; /* Posición final en el centro vertical de la pantalla */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón con animación -->
+    <!-- Contenido adicional, si es necesario -->
+    <a href="Pagina inicio.html" class="animate-button">¡Haz clic para visitar nuestra página!</a>
+</body>
+</html>
